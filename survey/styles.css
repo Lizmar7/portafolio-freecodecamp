@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We would love to hear your thoughts! Please fill out this form.</p>
+  </header>
+  <form id="survey-form">
+    <!-- Name -->
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" placeholder="Enter your name" required>
+    
+    <!-- Email -->
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" placeholder="Enter your email" required>
+    
+    <!-- Number -->
+    <label id="number-label" for="number">Age:</label>
+    <input id="number" type="number" placeholder="Enter your age" min="10" max="100">
+    
+    <!-- Dropdown -->
+    <label for="dropdown">What is your favorite programming language?</label>
+    <select id="dropdown">
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+      <option value="ruby">Ruby</option>
+    </select>
+    
+    <!-- Radio Buttons -->
+    <p>How would you rate your experience with coding?</p>
+    <label>
+      <input type="radio" name="experience" value="beginner"> Beginner
+    </label>
+    <label>
+      <input type="radio" name="experience" value="intermediate"> Intermediate
+    </label>
+    <label>
+      <input type="radio" name="experience" value="advanced"> Advanced
+    </label>
+    
+    <!-- Checkboxes -->
+    <p>What tools do you use for development?</p>
+    <label>
+      <input type="checkbox" value="vs-code"> Visual Studio Code
+    </label>
+    <label>
+      <input type="checkbox" value="git"> Git
+    </label>
+    <label>
+      <input type="checkbox" value="docker"> Docker
+    </label>
+    
+    <!-- Textarea -->
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+    
+    <!-- Submit -->
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>
